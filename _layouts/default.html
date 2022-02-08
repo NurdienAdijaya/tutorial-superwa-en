@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <title>Tutorial SuperWA | English</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:title" content="Tutorial Superwa" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="description" content="English" />
+    <meta property="og:description" content="English" />
+    <meta property="og:site_name" content="Tutorial Superwa" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Tutorial Superwa" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <script src="https://code.jquery.com/jquery-3.3.0.min.js" integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin="anonymous"></script>
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    {% include head-custom.html %}
+  </head>
+  <body>
+
+      <header class="page-header" role="banner">
+        <!-- <h1>{{ default: site.title | default: site.github.repository_name }}</h1> -->
+        <!-- Top Navigation Menu -->
+    <div class="topnav">
+      <div class="logo_container">
+        <a class="superwa_logo_link" href="#top">
+          <img class="superwa_logo" src="https://docs.superwa.io/uploads/upload_2e6be4142df848de20ec776fc65affa3.png"/>
+          <h1 class="logo_title">SuperWA</h1>
+        </a>
+      </div>
+  <a href="#top" class="active"><h1>Tutorial SuperWA</h1></a>
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+    <a href="#channel">Channel</a>
+    <a href="#contact-list">Contact List</a>
+    <a href="#inbox">Inbox</a>
+    <a href="#broadcast">Broadcast</a>
+    <a href="#user">User</a>
+    <a href="#business-plus">Business Plus</a>
+    <a href="#settings">Settings</a>
+    <a href="#help-center">Help Center</a>
+  </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+      </header>
+
+      <!-- <div id="banner">
+        <span id="logo"></span>
+
+        <a href="{{ site.github.repository_url }}" class="button fork"><strong>View On GitHub</strong></a>
+        {% if site.show_downloads %}
+          <div class="downloads">
+            <span>Downloads:</span>
+            <ul>
+              <li><a href="{{ site.github.zip_url }}" class="button">ZIP</a></li>
+              <li><a href="{{ site.github.tar_url }}" class="button">TAR</a></li>
+            </ul>
+          </div>
+        {% endif %}
+      </div> -->
+      <!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section id="top">
+        {{ content }}
+
+      </section>
+      <footer>
+        <a href="superwa.io">SuperWA &copy;</a>
+        <br></br>
+        <span><small>Email: <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=info.superwa@gmail.com">info.superwa@gmail.com</a></small></span>
+        <p><small>Facebook: <a href="https://web.facebook.com/info.superwa/">SuperWA</a></small></p>
+      </footer>
+    </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+      </script>
+      <script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+  </body>
+</html>
